@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 import {
   Avatar,
   Paragraph,
-  ProfileUserImage,
-  ProfileUserName,
 } from 'components';
 import * as S from './style';
 
