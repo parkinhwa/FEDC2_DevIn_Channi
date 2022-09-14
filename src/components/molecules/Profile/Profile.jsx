@@ -5,7 +5,7 @@ import {
   FollowBtn,
   TextLink,
   Avatar,
-  Paragraph,
+  ProfileUserName,
   ProfileUpdateBtn,
 } from 'components';
 import * as S from './style';
@@ -45,7 +45,7 @@ export function Profile({
             }
           });
         },
-        { threshold: 1 },
+        { threshold: 0.9 },
       );
       if (!isSearchData) {
         observer.observe(profileRef.current);
@@ -84,9 +84,7 @@ export function Profile({
       <S.Wrapper>
         <Avatar src={userImage} alt="" />
         <TextLink type="link" to={`/profiles/${userId}`}>
-          <Paragraph bold isTruncated lineClamp={1}>
-            {userName}
-          </Paragraph>
+          <ProfileUserName userName={userName}/>
         </TextLink>
       </S.Wrapper>
       {authUser._id === userId ? (

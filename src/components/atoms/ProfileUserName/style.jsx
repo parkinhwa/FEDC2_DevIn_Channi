@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const UserName = styled.div`
   height: 3rem;
-  width: fit-content;
+  width: 100%;
 
-  max-width: 19vw;
+  max-width: 50vw;
 
   overflow: hidden;
   color: ${({ theme }) => theme.color.textPrime};
