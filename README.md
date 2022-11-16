@@ -112,3 +112,7 @@ REACT_APP_OG_API_BASEURL // 블로그 링크 이미지, 내용 관련 OG API
 `EventHeader` - 이벤트 필터
 
 `EventItemList` - 이벤트 목록
+
+## 마이그레이션
+
+vite로 마이그레이션 :point_right: https://github.com/parkinhwa/DevIn_To_Vite
